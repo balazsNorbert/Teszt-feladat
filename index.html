@@ -3,10 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>B Consulting | innovation integrated</title>
+    <meta name="description" content="Több mint 33 éve biztosítjuk teljes körű biztonságtechnikai és vagyonvédelmi rendszerek tervezését, kivitelezését, üzemeltetését és karbantartását.">
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/src/js/index.js" defer></script>
 </head>
-<body>
-    <h1 class="text-3xl text-red-300">Hello</h1>
+<body class="font-lexend font-semibold text-sm 2xl:text-lg text-white">
+    <header class="w-full h-screen bg-headerImage bg-cover bg-center relative">
+        <div class="flex justify-center items-center absolute inset-0 bg-gradient-to-b from-bgColor to transparent">
+            <nav class="fixed top-0 lg:flex justify-around items-center p-6 w-full z-20">
+                <a href="">
+                    <img src="/src/assetek/svg/Horizontal.svg" alt="B Consulting Logo">
+                </a>
+                <ul class="lg:flex items-center gap-3 lg:gap-7 hidden">
+                    <li class="flex items-center gap-1">
+                        <a class="hover:text-orangeCustom" href="">Szolgáltatások</a>
+                        <img src="/src/assetek/svg/arrow-down.svg" alt="lefele nyil">
+                    </li>
+                    <li><a class="hover:text-orangeCustom" href="">Referenciák</a></li>
+                    <li><a class="hover:text-orangeCustom" href="">Rólunk</a></li>
+                    <li><a class="hover:text-orangeCustom" href="">Kapcsolat</a></li>
+                </ul>
+                <div class="absolute top-24 md:top-6 right-5 lg:relative lg:top-0 lg:right-0 flex items-center gap-5 text-sm xl:text-base">
+                    <div class="flex items-center bg-orangeCustom py-2 lg:py-3 px-4 lg:px-6 ml-5 gap-3">
+                        <a class="text-center" href="">Ajánlatot Kérek</a>
+                        <img src="/src/assetek/svg/arrow-right.svg" alt="jobbra nyíl">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="/src/assetek/svg/Telefon.svg" alt="Telefon">
+                        <div>
+                            <h3>Hívjon Most</h3>
+                            <h3 class="leading-none">+36 (1) 123 122</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative top-24 md:top-8">
+                    <button class="lg:hidden" id="dropdownDefaultButton" data-dropdown-toggle="dropdown" type="button">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </button>
+                    <div id="dropdown" class="z-10 hidden absolute top-12 left-1 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 px-3">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                            <li class="flex items-center gap-1">
+                                <a class="hover:text-orangeCustom" href="">Szolgáltatások</a>
+                                <img src="/src/assetek/svg/arrow-down.svg" alt="lefele nyil">
+                            </li>
+                            <li><a class="hover:text-orangeCustom" href="">Referenciák</a></li>
+                            <li><a class="hover:text-orangeCustom" href="">Rólunk</a></li>
+                            <li><a class="hover:text-orangeCustom" href="">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <hr class="bg-white">
+            <div class="flex flex-col justify-center items-center w-4/5 gap-5 z-10">
+                <h2 class="font-normal text-sm md:text-lg 2xl:text-xl text-center">BIZTONSÁGTECHNIKA EGY KÉZBŐL</h2>
+                <h1 class="text-3xl md:text-4xl xl:text-6xl 2xl:text-7xl text-center">Komplex <span class="text-orangeCustom">biztonságtechnikai</span></h1>
+                <img class="relative xl:right-52 2xl:right-72 w-1/3 md:w-1/3 xl:w-1/4" src="/src/assetek/svg/curved-line.svg" alt="Curved line">
+                <h1 class="text-3xl md:text-4xl xl:text-6xl 2xl:text-7xl">megoldások</h1>
+                <h2 class="text-xl xl:text-2xl text-center">Több mint 33 éve biztosítjuk teljes körű biztonságtechnikai és vagyonvédelmi rendszerek tervezését, kivitelezését, üzemeltetését és karbantartását.</h2>
+            </div>
+            <div class="flex justify-center gap-3 absolute bottom-40">
+                <img src="/src/assetek/svg/Bullet2.svg" alt="Bullet point">
+                <img src="/src/assetek/svg/Bullet.svg" alt="Bullet point">
+                <img src="/src/assetek/svg/Bullet2.svg" alt="Bullet point">
+            </div>
+        </div>
+        <img class="absolute right-24 top-40 rotate-90" src="/src/assetek/svg/Dots01.svg" alt="kép pontokkal">
+        <img class="absolute left-28 bottom-60" src="/src/assetek/svg/Dots02.svg" alt="kép pontokkal">
+        <img class="absolute bottom-0 right-0" src="/src/assetek/svg/aramkor01.svg" alt="áramkőr kép">
+    </header>
+    <section class="bg-slate-200 w-full min-h-screen flex flex-col justify-center items-center gap-64 relative">
+        <div class="absolute -top-28 bg-darkBackground bg-cover bg-center rounded-3xl z-10 w-4/5 mb-20">
+            <div class="bg-gradient-to-b from-bgColor to transparent opacity-80 p-5 rounded-3xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:gird-cols-3 xl:grid-cols-4 gap-x-3 gap-y-6">
+                    <div class="flex flex-col gap-3">
+                        <img class="w-12 h-12" src="/src/assetek/svg/Piktogramok-4.svg" alt="B Consulting">
+                        <h3 class="text-lightBlue font-roboto font-bold text-lg">B CONSULTING</h3>
+                        <h3 class="text-2xl">Biztonságtechnika</h3>
+                        <p class="font-roboto font-normal">Innovatív vagyonvédelmi rendszerek a szükséges szakhatósági engedélyek beszerzésével és teljeskörű kivitelezéssel, a tervezéstől a karbantartásig.</p>
+                        <a class="underline" href="">Tovább</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <img class="w-12 h-12" src="/src/assetek/svg/Piktogramok-1.svg" alt="B Consulting">
+                        <h3 class="text-lightBlue font-roboto font-bold text-lg">B SPACE</h3>
+                        <h3 class="text-2xl">Konténerek</h3>
+                        <p class="font-roboto font-normal">Gyorsan telepíthető, ideiglenes konténereket kínálunk egyedi igényekhez: beléptető, irodai és lakó- és munkásszálló konténerek kulcsrakészen szállítva.</p>
+                        <a class="underline" href="">Tovább</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <img class="w-12 h-12" src="/src/assetek/svg/Piktogramok-2.svg" alt="B Consulting">
+                        <h3 class="text-lightBlue font-roboto font-bold text-lg">B GUARD</h3>
+                        <h3 class="text-2xl">Távfelügyelet</h3>
+                        <p class="font-roboto font-normal">Innovatív technológiával biztosítjuk az értékek védelmét és felügyeletét cégeknek, ipari parkoknak és közületeknek, hatékony és biztonságos megoldásokkal.</p>
+                        <a class="underline" href="">Tovább</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <img class="w-12 h-12" src="/src/assetek/svg/Piktogramok-3.svg" alt="B Consulting">
+                        <h3 class="text-lightBlue font-roboto font-bold text-lg">B PARKED</h3>
+                        <h3 class="text-2xl">Parkoló rendszerek</h3>
+                        <p class="font-roboto font-normal">Komplett parkolási infrastruktúra saját szoftverrel, mobil applikációval és mobil fizetéssel. Alkalmas kisebb parkolóhelyek és teljes parkolóházak kezelésére is.</p>
+                        <a class="underline" href="">Tovább</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-3/4 text-black relative top-48">
+            <h1 class="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl text-center">A legjobb komplex szolgáltatást nyújtjuk a <span class="text-orangeCustom">biztonságtechnika</span> üzletágban!</h1>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between w-4/5 gap-20 text-black">
+            <div class="flex flex-col gap-5">
+                <div class="text-darkBlue bg-slate-300 px-2 py-1 w-52">
+                    <h3 class="font-normal text-lg md:text-xl 2xl:text-xl">VAGYONVÉDELEM</h3>
+                </div>
+                <h2 class="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">Biztonságtechnikai rendszerek</h2>
+                <p class="font-normal font-roboto">Innovatív vagyonvédelmi rendszereket kínálunk, amelyek a szükséges szakhatósági engedélyek beszerzésétől a teljeskörű kivitelezésig minden folyamatot magukban foglalnak, a tervezéstől a karbantartásig. </p>
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-y-3 gap-x-3">
+                    <div class="flex gap-4">
+                        <img src="/src/assetek/svg/check-circle.svg" alt="Pipa">
+                        <p class="xl:text-base">Tervezés</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img src="/src/assetek/svg/check-circle.svg" alt="Pipa">
+                        <p class="xl:text-base">Kivitelezés</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img src="/src/assetek/svg/check-circle.svg" alt="Pipa">
+                        <p class="xl:text-base">Egyedi megoldások</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img src="/src/assetek/svg/check-circle.svg" alt="Pipa">
+                        <p class="xl:text-base">Karbantartás</p>
+                    </div>
+                </div>
+                <button class="flex items-center bg-orangeCustom text-white w-36 relative right-5 py-2 lg:py-3 px-4 lg:px-6 ml-5 gap-3" type="button">
+                    <a class="text-center" href="">Részletek</a>
+                    <img src="/src/assetek/svg/arrow-right.svg" alt="jobbra nyíl">
+                </button>
+            </div>
+            <img class="rounded-small" src="/src/assetek/png/Kép01.png" alt="Kép egy épületről">
+        </div>
+    </section>
+    <section class="bg-white w-full h-screen flex flex-col justify-center items-center gap-36 relative text-black">
+        <div class="flex flex-col xl:flex-row justify-between gap-20 items-center w-4/5">
+            <img class="rounded-small" src="/src/assetek/png/Kép02.png" alt="Konténer megoldások">
+            <div class="flex flex-col gap-5">
+                <div class="text-darkBlue bg-slate-300 px-2 py-1 w-80">
+                    <h3 class="font-normal text-lg md:text-xl 2xl:text-xl">BELÉPTETŐ RENDSZEREK</h3>
+                </div>
+                <h2 class="text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">Konténer megoldások</h2>
+                <p class="font-normal font-roboto">A konténereink célja, hogy ideiglenes helyszíneken biztosítsák a munkavégzést, beléptetést, szállásolást és értéktárolást, ipari és építési igényekre szabva. Könnyen szállíthatók, gyorsan telepíthetők, és megfelelnek a biztonságtechnikai követelményeknek, praktikus és funkcionális megoldásokat nyújtva.</p>
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-y-3 gap-x-3">
+                    <div class="flex gap-4">
+                        <img src="/src/assetek/svg/check-circle.svg" alt="Pipa">
+                        <p class="xl:text-base">Könnyen szállítható</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img src="/src/assetek/svg/check-circle.svg" alt="Pipa">
+                        <p class="xl:text-base">Sokcélú felhasználás</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img src="/src/assetek/svg/check-circle.svg" alt="Pipa">
+                        <p class="xl:text-base">Gyorsan telepíthető</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img src="/src/assetek/svg/check-circle.svg" alt="Pipa">
+                        <p class="xl:text-base">Egyedi gyártás</p>
+                    </div>
+                </div>
+                <button class="flex items-center bg-orangeCustom text-white w-36 relative right-5 py-2 lg:py-3 px-4 lg:px-6 ml-5 gap-3" type="button">
+                    <a class="text-center" href="">Részletek</a>
+                    <img src="/src/assetek/svg/arrow-right.svg" alt="jobbra nyíl">
+                </button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

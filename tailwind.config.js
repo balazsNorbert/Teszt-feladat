@@ -16,10 +16,14 @@ module.exports = {
         'bgColor': '#262C45',
         'darkBgColor': '#242A47',
         'lightBlue': '#A9C2E7',
+        'darkBlue': '#4967BF',
       },
       padding: {
         'navPadding': '14px',
-    },
+      },
+      rounded: {
+        'small': '10px',
+      }
   },
   plugins: [],
   }
